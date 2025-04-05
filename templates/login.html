@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - iGNiS</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      background-image:
+        linear-gradient(#1a1a1a 1px, transparent 1px),
+        linear-gradient(90deg, #1a1a1a 1px, transparent 1px);
+      background-size: 20px 20px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 900px;
+      width: 100%;
+      padding: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .left-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .login-box {
+      background-color: #2a2a2a;
+      padding: 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 320px;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00ff88;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #bbb;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      background-color: #fff;
+      color: #000;
+    }
+
+    .form-options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+    }
+
+    .form-options a {
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    .form-options input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .login-btn {
+      width: 100%;
+      background-color: #00ff88;
+      color: #000;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-btn:hover {
+      background-color: #00e676;
+    }
+
+    .divider {
+      text-align: center;
+      margin-top: 20px;
+      color: #bbb;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: #bbb;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #00ff88;
+    }
+
+    .right-box {
+      text-align: center;
+    }
+
+    .right-box p {
+      color: #bbb;
+      margin-bottom: 10px;
+    }
+
+    .signup-link {
+      font-size: 1.5rem;
+      color: #00ff88;
+      text-decoration: none;
+    }
+
+    .signup-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Side: Login -->
+    <div class="left-box">
+      <div class="logo">
+        <img src="https://storage.googleapis.com/a1aa/image/EhwGOBellwYTxvYtbnEqia1OcQdqU3wnfNcQfy3BTSA.jpg" alt="iGNiS logo" />
+        <span class="logo-text">iGNiS</span>
+      </div>
+      <div class="login-box">
+        <h2>LOGIN</h2>
+        <form>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="form-options">
+            <label><input type="checkbox" /> Remember Me?</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+        <div class="divider">Or Login with</div>
+        <div class="social-icons">
+          <a href="#" title="Login with Google">G</a>
+          <a href="#" title="Login with Facebook">F</a>
+          <a href="#" title="Login with X">X</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: Signup Prompt -->
+    <div class="right-box">
+      <p>Don't have an account?</p>
+      <a href="#" class="signup-link">SIGNUP</a>
+    </div>
+  </div>
+</body>
+</html>

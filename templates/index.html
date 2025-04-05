@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IGNIS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      background-color: #000;
+      background-image: 
+        linear-gradient(#1a1a1a 1px, transparent 1px),
+        linear-gradient(90deg, #1a1a1a 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: black;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #00ff88;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    .centered {
+      text-align: center;
+    }
+
+    .centered img {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .section-text {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .text-right {
+      text-align: right;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 20px;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .team-member img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      border: 2px solid #00ff88;
+    }
+
+    .team-member h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .team-member p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* Gemini Chatbox */
+    .chatbox {
+      background: #111;
+      border-top: 1px solid #333;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .chatbox input {
+      padding: 10px;
+      width: 60%;
+      max-width: 400px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .chatbox button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #00ff88;
+      border: none;
+      border-radius: 5px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .chatbox button:hover {
+      background-color: #00cc6a;
+    }
+
+    .chatbox p {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #eee;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+
+      .text-left, .text-right {
+        text-align: center;
+      }
+
+      .team-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .chatbox input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .chatbox button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://storage.googleapis.com/a1aa/image/3bEIflHrC-kTZRaNn7__aSId61VFvG9c9nM5EHlpBPo.jpg" alt="IGNIS logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="centered">
+      <img src="https://storage.googleapis.com/a1aa/image/3bEIflHrC-kTZRaNn7__aSId61VFvG9c9nM5EHlpBPo.jpg" alt="IGNIS Banner">
+      <h1 class="section-title">Welcome to IGNIS – Igniting Creativity for Designers</h1>
+      <p class="section-text">A platform for designers to unleash their creativity and showcase their work.</p>
+    </section>
+
+    <section class="text-right section-text">
+      <h2 class="section-title">Who we are</h2>
+      <p>We are a community of passionate designers dedicated to helping each other grow and succeed in the design industry.</p>
+    </section>
+
+    <section class="text-left section-text">
+      <h2 class="section-title">What we do?</h2>
+      <p>We provide resources, inspiration, and a platform for designers to share their work and connect with others.</p>
+    </section>
+
+    <section class="text-right section-text">
+      <h2 class="section-title">Why IGNIS?</h2>
+      <p>IGNIS is the perfect place for designers to find inspiration, collaborate with others, and take their skills to the next level.</p>
+    </section>
+
+    <section class="centered">
+      <h2 class="section-title">TEAM</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://storage.googleapis.com/a1aa/image/Y5fZxOBFdHNWo1numC-IYcWSy3_bWhIoOWwNwHHHwB0.jpg" alt="Team member 1">
+          <h3>Harshad Pathak</h3>
+          <p>Chief Designer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://storage.googleapis.com/a1aa/image/jfdw3RX1z_bevd0mBQIXdGuYHxvCTJeDO9c7jULKe7k.jpg" alt="Team member 2">
+          <h3>Suraj Meena</h3>
+          <p>Lead Developer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://storage.googleapis.com/a1aa/image/vw8A8kUFrglr8vtRHYt5Hra6vCqbCkvxulvBLkbZf8E.jpg" alt="Team member 3">
+          <h3>Yeshmita Chauhan</h3>
+          <p>Marketing Head</p>
+        </div>
+        <div class="team-member">
+          <img src="https://storage.googleapis.com/a1aa/image/14fqYgLBADTVzU05IQvhvlGV6jQgFKs85ol83PgiF4g.jpg" alt="Team member 4">
+          <h3>Tanishq Singhal</h3>
+          <p>Project Manager</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gemini AI Chat Section -->
+    <section class="chatbox">
+      <h2 class="section-title">Ask Gemini AI</h2>
+      <input type="text" id="userInput" placeholder="Type your question...">
+      <button onclick="askAI()">Ask</button>
+      <p id="response"></p>
+    </section>
+  </main>
+
+  <script>
+    function askAI() {
+      const message = document.getElementById("userInput").value;
+      fetch("/ask", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ message: message })
+      })
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("response").innerText = data.reply;
+      })
+      .catch(error => console.error("Error:", error));
+    }
+  </script>
+</body>
+</html>
